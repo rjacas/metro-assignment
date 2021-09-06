@@ -1,6 +1,4 @@
 class RouteController < ApplicationController
-
-
   #POST /route/best_route
   def best_route
     run_or_print_and_render_error {
