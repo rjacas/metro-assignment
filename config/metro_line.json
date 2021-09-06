@@ -1,0 +1,32 @@
+{
+  "A": {
+    "conections": ["B"]
+  },
+  "B": {
+    "conections": ["A", "C"]
+  },
+  "C": {
+    "conections": ["B", "D", "G"]
+  },
+  "D": {
+    "conections": ["C", "E"]
+  },
+  "E": {
+    "conections": ["D", "F"]
+  },
+  "F": {
+    "conections": ["E", "I"]
+  },
+  "G": {
+    "color": "green",
+    "conections": ["C", "H"]
+  },
+  "H": {
+    "color": "red",
+    "conections": ["G", "I"]
+  },
+  "I": {
+    "color": "green",
+    "conections": ["F", "H"]
+  }
+}

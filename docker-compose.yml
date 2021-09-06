@@ -1,0 +1,20 @@
+version: '3.6'
+services:
+  app:
+    build: ./
+    image: metro
+    container_name: metro_app
+    ports:
+      - 3034:3000
+    expose:
+      - 3034
+    volumes:
+      - ./:/var/www
+    env_file:
+      - general.env
+      - environment.env
+    networks:
+      - network
+
+networks:
+  network:
