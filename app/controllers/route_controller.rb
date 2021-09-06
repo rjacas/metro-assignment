@@ -9,6 +9,10 @@ class RouteController < ApplicationController
       end_station = params[:end]
       color = params[:color]
       p params
+      p metro_line_file
+      p init_station
+      p end_station
+      p color
       render json: {recieved: true}, status: :ok
     }
   end
